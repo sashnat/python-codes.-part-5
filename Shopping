@@ -12,7 +12,7 @@ class Shopping:
           elif 0 < m < 100:
               self.where = "MANGO"
           else:
-              self.where = "MK"
+              self.where = "Michael Kors"
  
      def plus(self,p):
           self.money = self.money + p
