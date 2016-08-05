@@ -1,2 +1,2 @@
 # python-codes.-part-5
-# Классы. Множества / Classes. Aggregates
+# Множества. Словари / Aggregates. Dictionary
