@@ -57,7 +57,8 @@ for key, value in sorted(d.items()):
         print(key, end=" ")
         print(value1[key])
         
-'''  Выходные данныеIvanov:
+'''  Выходные данные
+Ivanov:
 aaa 52
 bbb 3
 ccc 45
