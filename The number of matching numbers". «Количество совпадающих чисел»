@@ -1,4 +1,5 @@
-'''Множества. Aggregates. Natalia Sashnikova
+'''Множества. Aggregates. 
+Natalia Sashnikova
 "The number of matching numbers". «Количество совпадающих чисел»
 Даны два списка чисел. 
 Посчитайте, сколько чисел содержится одновременно как в первом списке, так и во втором.
