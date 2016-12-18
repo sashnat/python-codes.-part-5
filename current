@@ -1,0 +1,23 @@
+def h(man):
+    if man not in p_tree:# if man not in p_tree.keys() ПОНЯТНЕЕ, Peter_I - узел "0" дерева, так как такого ключа нет в словаре
+        return man
+    else:
+        return h(p_tree[man])
+    
+p_tree = {}
+n = int(input())
+for i in range(n - 1):
+    child, parent = input().split()
+    p_tree[child] = parent
+
+p ={}    
+m = int(input())
+for i in range(m):
+    m1, m2 = input().split()
+    p[m1] = m2
+    if m1 == h(m2):
+        print(1, m1)
+    if m2 == h(m1):
+        print(2, m2)
+    else:
+        print(0)
