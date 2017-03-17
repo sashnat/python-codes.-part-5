@@ -19,7 +19,6 @@ KZWNAOSV8H8APVF LDAIALO4YMXE7
 WLPOJYRN0G3MC '''
 
 n = int(input())
-p = {}
 p = dict(input().split() for j in range(n))
 k = input()
 for key, value in p.items():
