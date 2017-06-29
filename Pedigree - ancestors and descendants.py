@@ -1,13 +1,13 @@
-def f(d, a1, a2):
-    s = a1
+def f(d, x1, x2):
+    s = x1
     while s in d:
         s = d[s]
-        if s == a2:
+        if s == x2:
             return 2
-    s = a2      
+    s = x2      
     while s in d:
         s = d[s]
-        if s == a1:
+        if s == x1:
             return 1 
     return 0
  
