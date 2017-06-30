@@ -5,7 +5,7 @@ for i in range(n - 1):
     d[child] = parent
 def f(x, d): # create a function to be used as many times as needed
     list = [x]
-    while x: # while child has his direct parent
+    while x: # while child has his direct parent (the same as --> while x in d: - or- --> while x in d.keys():):
         try:
             x = d[x] # a child becomes a parent - down to the root
             list.append(x) # all existing parents
