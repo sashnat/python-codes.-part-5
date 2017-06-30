@@ -8,7 +8,7 @@ def f(x, d): # create a function to be used as many times as needed
     while True: # if child has his direct parent
         try:
             x = d[x] # a child becomes a parent - down to the root
-            list.append(x) # all existing "children"
+            list.append(x) # all existing parents
         except KeyError:
             break
     return list
