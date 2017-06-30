@@ -1,23 +1,22 @@
-d = {}
+d = {} # build the dictionary
 n = int(input())
 for i in range(n - 1):
     child, parent = input().split()
     d[child] = parent
-def f(x, d):
+def f(x, d): # create a function to be used as many times as needed
     list = [x]
-    while True:
+    while True: # if child has his direct parent
         try:
-            x = d[x]
-            list.append(x)
+            x = d[x] # a child becomes a parent - dowm to the root
+            list.append(x) # all existing "children"
         except KeyError:
             break
-    #print(list)
     return list
     
 m = int(input())
 for i in range(m):
     a1, a2 = input().split()
-    for a in f(a2, d):
-        if a in f(a1, d):
+    for a in f(a2, d): # for every data in a list
+        if a in f(a1, d): # for every data in a list
             print(a)
             break
