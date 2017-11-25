@@ -26,8 +26,7 @@ while True:
             d[key].append(value)
         else:
             d[key] = [value]
-     # Loop continuously
-    except EOFError:
+    except ValueError:
         #print ("Error: EOF or empty input!")
         l == ""
         break
