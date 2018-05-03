@@ -5,5 +5,5 @@
 
 
 a = list(set([int(j) for j in input().split()]) & set([int(j) for j in input().split()]))
-for elem in a:
+for elem in sorted(a): # нашла ошибку через 2 года )
     print(elem, end=' ')
